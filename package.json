@@ -1,0 +1,18 @@
+{
+  "name": "alt-todo",
+  "version": "0.0.1",
+  "description": "A sample todo using alt",
+  "dependencies": {
+    "alt": "*",
+    "react": "*",
+    "react-dom": "*"
+  },
+  "devDependencies": {
+    "browserify": "*",
+    "reactify": "*"
+  },
+  "scripts": {
+    "build": "browserify -t [reactify --es6] src/App.jsx > build/app.js",
+    "start": "npm run build && open 'index.html' "
+  }
+}
